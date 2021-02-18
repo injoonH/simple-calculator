@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+input,
+input::placeholder,
+button {
+    color: var(--clr-black-800);
+    font-family: "Baloo Da 2", sans-serif;
+    font-weight: var(--fw-regular);
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}

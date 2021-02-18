@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600;800&display=swap");
+@import "variables.css";
+@import "default.css";
+
+body {
+    background-image: linear-gradient(to right, #74b9ff, #fd79a8);
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 90px);
+}
+
+.calculator-grid > button {
+    font-size: 1.8rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid var(--clr-black-100);
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.calculator-grid > .red-btn:hover {
+    background-color: rgba(248, 177, 195, 0.9);
+}
+
+.output {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: var(--clr-black-800);
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output-previous {
+    color: var(--clr-black-400);
+    font-size: 1.5rem;
+}
+
+.output-current {
+    color: var(--clr-black-100);
+    font-size: 2.5rem;
+}

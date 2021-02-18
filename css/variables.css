@@ -1,0 +1,10 @@
+:root {
+    --clr-black-100: #ffffff;
+    --clr-black-200: #dfe6e9;
+    --clr-black-400: #b2bec3;
+    --clr-black-600: #636e72;
+    --clr-black-800: #2d3436;
+
+    --fw-regular: 600;
+    --fw-bold: 800;
+}
